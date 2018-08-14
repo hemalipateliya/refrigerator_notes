@@ -1,0 +1,36 @@
+<html>
+<head> 
+   
+</head>
+<body>
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <!--<div class="panel-heading">Panel heading</div>-->
+    <div class="panel-body">
+       
+        <h2> All Fridge Notes</h2>
+
+  <!-- Table -->
+  <table class="table">
+    <tr>
+            <td>Title</td>
+            <td>Author</td>
+        <td>When</td>
+            <!--<td>content</td>-->
+      </tr>
+        {{# each items}}
+      
+        <tr>
+        <td><a href="/note/{{this._id}}">{{this.title}}</a></td>
+        <td>{{this.author}}</td>
+          <td>{{this.datetime}}</td>
+        
+       </tr>
+        {{/each
+        }}
+  </table>
+</div>
+    </div>
+</body>
+</html>
+
